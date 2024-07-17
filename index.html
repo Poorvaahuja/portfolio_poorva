@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Website</title>
+    <script src="https://kit.fontawesome.com/d016bc7d3c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <nav>
+                <img src="Designer logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="cross" class="fas fa-times"></i>
+
+                </ul>
+                <i id="bars" class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+    <div id="Header">
+        <div class="container">
+           <div class="row">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'am <span class="auto-type"></span></h1>
+            </div>
+            <div class="imagemain">
+                <img src="background.jpeg">
+            </div>
+           </div>
+
+        </div>  
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="My first design 6.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Poorva Ahuja, a B.Tech student at IGDTUW (Indira Gandhi Delhi Technical University for Women) with a projected graduation year of '26. I am thrilled to share my journey and showcase my skills in the world of technology and problem-solving.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>WEB DEVELOPMENT</span><br>HTML, CSS, JAVASCRIPT
+                            </li>
+                            <li>
+                                <span>MACHINE LEARNING</span><br>Numpy, Pandas, TensorFlow
+                            </li>
+                            <li>
+                                <span>COMPETITIVE CODING</span><br>JAVA, Python, C
+                            </li>
+                            <li>
+                                <span>APP DEVELOPMENT</span><br>Flutter
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>June-Aug 2023</span><br>CV DL intern
+                            </li>
+                            <li>
+                                <span>May-July 2024</span><br>App Dev intern
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2022-2026</span><br>Btech IT-Indira Gandhi Delhi Techincal University For Women
+                            </li>
+                            <li>
+                                <span>2020-2022</span><br>95% - Kendriya Vidyalaya Pushp Vihar, Delhi 
+                            </li>
+                            <li>
+                                <span>2018-2020</span><br>94.4% - Kendriya Vidyalaya Pushp Vihar, Delhi 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id=" services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-lists">
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Computer Vision and Deep Learning </h2>
+                    <p> 
+                        I have a strong interest in computer vision and deep learning, with experience in implementing various techniques in this field. My work includes publishing a research paper.
+                    </p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>App Development</h2>
+                    <p>I have recently learned Flutter development with a focus on integrating AI. I am currently exploring and building various applications to enhance my skills.
+                    </p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Web Development</h2>
+                    <p>I enjoy creating fun and interesting websites and have worked with HTML, CSS, and JavaScript. I'm passionate about enhancing my skills and knowledge in this field.
+                    </p>
+                    
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coding </h2>
+                    <p>I am currently enhancing my skills in data structures and algorithms. I actively participate in coding challenges to sharpen my problem-solving abilities and apply my knowledge.
+                    </p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="cvdl img.jpeg">
+                    <div class="layer">
+                        <h3>
+                            Human Pose Estimation using MoveNet Preprocessor and Deep Learning Technique
+                        </h3>
+                        <p>
+                            A team project that detects and analyzes the human body’s pose from images. Used simple
+ANN classification model for pose classification and implemented the model using Movenet preprocessor.
+                        </p>
+                        <a href="https://github.com/trisha-tomy/human-pose-estimation-cv-dl-training-and-internship"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="webd harrypotter.jpeg">
+                    <div class="layer">
+                        <h3>The Forbidden Forest Quest - Adventure Game</h3>
+                        <p>
+                            A Web game inspired by Harry Potter, based on the user's choices.
+                        </p>
+                        <a href="https://poorvaahuja.github.io/adventure_game/"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Designer.png">
+                    <div class="layer">
+                        <h3>Eco Savvy</h3>
+                        <p>
+                            A Hackathon Team Project, the Web Portal that offers transformative experience, scanning the waste and classifying it, getting eco-education in VR room, playing waste sorting game and also supports chatbot. Scanning and classifying the waste is being done using machine learning, and the model is hosted using Streamlit and Ngrok.
+                        </p>
+                        <a href="https://git-upasana.github.io/eco-savvy/"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>poorva.ahuja2004@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope"></i>poorva049btit22@igdtuw.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>xxx xxxx xxx</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/poorva-ahuja-011614261/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/poorvaahuja"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/ahuja_poorva">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Resume_Poorva_Ahuja.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-400px";
+    }
+</script>
+
+  <script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbwTNGh9GFNVtjlqUXytuSt8eDbgV0I8sQ7J49whShNTovNYXKJdCc82fvB4f3RWiUOf/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+    var typed = new Typed(".auto-type",{
+        strings: ["Poorva Ahuja"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop:true
+    })
+</script>
+    
+
+</body>
+</html>
