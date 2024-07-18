@@ -107,7 +107,7 @@ nav ul li a:hover::after{
     justify-content: space-between;
 }
 .imagemain img{
-    width: 600px;
+    width: 500px;
     height: 500px;
 }
 
