@@ -250,18 +250,9 @@ nav ul li a:hover::after{
 }
 
 .work{
-    flex: 1 0 30%;
-    margin: 10px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-}
-.work-extra {
-    display: none;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
 }
 
 .work img{
