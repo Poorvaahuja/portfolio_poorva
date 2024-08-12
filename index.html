@@ -180,8 +180,39 @@ ANN classification model for pose classification and implemented the model using
 
                     </div>
                 </div>
+                <div class="work" id="addition-projects" style="display: none;">
+                    <img src="fake news detection.jpeg">
+                    <div class="layer">
+                        <h3>Fake News Detection</h3>
+                        <p>
+                            AI model that detects fake news from the data containing id, title, author, text and label. Used Logistic Regression, suitable for binary classification.
+                        </p>
+                        <a href="https://github.com/Poorvaahuja/fakenewsdetection"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work" id="addition-projects" style="display: none;">
+                    <img src="breastcancerdetection.jpg">
+                    <div class="layer">
+                        <h3>Breast Cancer Detection (Deep Learning)</h3>
+                        <p>
+                            The model detects the type of tumor(Benign or Malignant) present using various parameters. Built a simple neural network.
+                        </p>
+                        <a href="https://github.com/Poorvaahuja/breastcancerdetection"><i class="fa-solid fa-up-right-from-square fa-fade"></i></a>
+                    </div>
+                </div>
+                
+                <button id="see-more-button" class="btn" onclick="showAdditionProjects()">See More</button>
+                <script>
+                    function showAdditionProjects(){
+                        var additionalProjects = document.querySelectorAll('.work');
+                        for (project of additionalProjects){
+                            project.style.display = 'block';
+                        }
+                        document.getElementById('see-more-button').style.display='none';
+                    }
+                </script>
             </div>
-            <a href="" class="btn">See More</a>
         </div>
     </div>
 
