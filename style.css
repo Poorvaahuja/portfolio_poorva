@@ -22,7 +22,6 @@ html{
 
 }
 .container{
-    object-fit: contain;
     padding: 10px 10px;
 }
 nav{
@@ -110,7 +109,6 @@ nav ul li a:hover::after{
 .imagemain img{
     width: 500px;
     height: 500px;
-    
 }
 
 .about-col-1{
@@ -237,27 +235,22 @@ nav ul li a:hover::after{
 }
 
 .work-list{
-    display: flex;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
+}
 
+@media only screen and (max-width: 900px) {
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .work{
-    flex: 1 0 30%;
-    margin: 10px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-}
-.work-extra {
-    display: none;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
 }
 
 .work img{
